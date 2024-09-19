@@ -16,13 +16,13 @@ This project will focus on the following four substrates:
 - territory__rooms
 
 ### Scenarios
-Below are the training and evaluation scenarios for each substrate:
-| Substrate | Training Scenario | Evaluation Scenario |
-| --- | --- | --- |
-| allelopathic_harvest__open | sc1 | sc2 |
-| clean_up | sc0 | sc1 |
-| prisoners_dilemma_in_the_matrix__arena | sc0 | sc1 |
-| territory__rooms | sc0 | sc1 |
+Below are the evaluation scenarios for each substrate:
+| Substrate | Evaluation Scenario |
+| --- | --- |
+| allelopathic_harvest__open | sc1 |
+| clean_up | sc1 |
+| prisoners_dilemma_in_the_matrix__arena | sc0 |
+| territory__rooms | sc0 |
 
 For example, to set up a scenario:
 ```
