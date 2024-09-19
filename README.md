@@ -4,6 +4,8 @@ This Melting Pot 2.0 Challenge is for advancing research in multi-agent reinforc
 
 Please read `README.md` for the project proposal related to the XAI606: Applications and Practice in Neural Networks course.
 
+Please contact my email `hayeong_lee@korea.ac.kr` if you have any questions.
+
 ## Tasks
 The challenge involves developting innovative MARL solutions that focus on achieving objectives through teamwork, teaching, negotiation, and sanctioning undesirable behaviors. The provided scenarios are specifically designed to encourage cooperation, coordination, reciprocity, and other prosocial behaviors.
 
@@ -14,6 +16,22 @@ This project will focus on the following four substrates:
 - clean_up
 - prisoners_dilemma_in_the_matrix__arena
 - territory__rooms
+
+#### Observation and Action
+The agents have a partial observability window of 11 $\times$ 11 sprites (8 $\times$ 8 pixels), offset so they see more infront than behind them. The agent sees 9 rows in front of itself, 1 row behind, and 5 columns to either side. Thus in RGB pixels, the size of each observation is 88 $\times$ 88 $\times$ 3.
+
+Movement actions are forward, backward, strafe left, strafe right, turn left, and turn right.
+
+```
+from meltingpot import substrate
+
+env_name = 'clean_up'
+conf = substrate.get_config(env_name)
+env = substrate.build(env_name, roles=conf.default_player_roles)
+
+print(env.observation_spec())
+print(env.action_spec())
+```
 
 ### Scenarios
 Below are the evaluation scenarios for each substrate:
