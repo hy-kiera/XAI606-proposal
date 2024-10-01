@@ -1,3 +1,5 @@
+seed = 0
+
 # Train
 total_timesteps = 1e6
 substrate_name = 'clean_up'

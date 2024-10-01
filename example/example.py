@@ -4,6 +4,8 @@ from meltingpot import substrate, scenario
 import configs
 
 def main():
+    np.random.seed(configs.seed)
+    
     # train
     env_name = configs.substrate_name
     env_config = substrate.get_config(env_name)
